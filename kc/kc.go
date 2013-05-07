@@ -506,7 +506,7 @@ func (c *CUR) GetValue(step bool) (string, error) {
 }
 
 // Gets both the key and value
-func (c *CUR) Get(step bool, value string) (string, error) {
+func (c *CUR) Get(value string, step bool) (string, error) {
 
 	var valueLen C.size_t	
 	var keyLen C.size_t	
